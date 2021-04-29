@@ -1,0 +1,23 @@
+<BFAITaskTemplateList>
+   <BFAITaskTemplate Name="ZTRPC" Priority="10" UniqueID="Cheater:ZTRPC">
+      <BFAICreateData>
+         <Subjects>
+            <Cheater />
+         </Subjects>
+         <Targets>
+            <self />
+         </Targets>
+         <Objects></Objects>
+      </BFAICreateData>
+      <BFAIEvalData fixedScore="10000" />
+      <BFBehExecTask>
+         <BFBehScript context="behavior" file="scripts/ZTRPC.lua" function="ztRPC" />
+      </BFBehExecTask>
+      <BFAICompletionData />
+      <BFAIFailureData>
+         <BFBehExecTask>
+            <BFBehPlaySet behSet="FailureSet" />
+         </BFBehExecTask>
+      </BFAIFailureData>
+   </BFAITaskTemplate>
+</BFAITaskTemplateList>
